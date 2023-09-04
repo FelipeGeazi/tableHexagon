@@ -1,0 +1,81 @@
+.flexBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color-grey-4);
+  padding: 1.625rem 0.75rem;
+
+  & > thead:first-child {
+    padding: 0rem 1.2rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1em;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+
+    img {
+      background-color: var(--color-grey-3);
+      border-radius: 3px;
+    }
+  }
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: var(--color-grey-4);
+  justify-content: space-between;
+  gap: 1em;
+  background-color: var(--color-grey-3);
+  align-items: center;
+  align-content: center;
+  border-bottom: 0.01px solid white;
+}
+
+.ulBox {
+  background-color: var(--color-grey-3);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 9px;
+  width: 100%;
+  align-items: center;
+  height: 358px;
+  height: min-content;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+}
+@media (min-width: 870px) {
+  .ulBox {
+    padding: 23px 22px;
+  }
+}
